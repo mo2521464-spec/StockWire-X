@@ -129,7 +129,7 @@ const MediaHighlights: React.FC<MediaHighlightsProps> = ({
                     key={item.id}
                     className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
                   >
-                    <Card className="group cursor-pointer overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <Card className="group cursor-pointer overflow-hidden border border-gray-700/10 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-xl">
                       <div className="relative">
                         {/* Thumbnail */}
                         <div className="aspect-video overflow-hidden">
