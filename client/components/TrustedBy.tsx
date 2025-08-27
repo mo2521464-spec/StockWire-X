@@ -120,54 +120,46 @@ const TrustedBy: React.FC<TrustedByProps> = ({
               Trusted by leading ASX companies and institutions
             </h3>
 
-            {/* Premium Tier Logos */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center mb-8">
-              {logos
-                .filter((logo) => logo.tier === "premium")
-                .slice(0, 10)
-                .map((logo, index) => (
+            {/* Infinite Scrolling Marquee */}
+            <div className="relative overflow-hidden">
+              <div className="flex animate-marquee whitespace-nowrap">
+                {/* First set of logos */}
+                {logos.map((logo, index) => (
                   <div
-                    key={logo.id}
-                    className="group cursor-pointer transition-all duration-300 hover:scale-105"
+                    key={`first-${logo.id}`}
+                    className="group cursor-pointer transition-all duration-300 hover:scale-105 mx-8 flex-shrink-0"
                     onClick={() =>
                       logo.website && window.open(logo.website, "_blank")
                     }
                   >
-                    <div className="w-32 h-20 flex items-center justify-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-orange/30 hover:shadow-md transition-all duration-300">
+                    <div className="flex items-center justify-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-orange/30 hover:shadow-md transition-all duration-300 min-w-[120px] h-20">
                       <img
                         src={logo.logoUrl}
                         alt={`${logo.name} logo`}
-                        className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                        className="h-16 w-auto object-contain transition-all duration-300"
                       />
                     </div>
                   </div>
                 ))}
-            </div>
-
-            <Separator className="max-w-2xl mx-auto" />
-
-            {/* Standard Tier Logos - Smaller */}
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 items-center justify-items-center opacity-75">
-              {logos
-                .filter((logo) => logo.tier === "standard")
-                .slice(0, 12)
-                .map((logo, index) => (
+                {/* Duplicate set for seamless loop */}
+                {logos.map((logo, index) => (
                   <div
-                    key={logo.id}
-                    className="group cursor-pointer transition-all duration-300 hover:opacity-100"
+                    key={`second-${logo.id}`}
+                    className="group cursor-pointer transition-all duration-300 hover:scale-105 mx-8 flex-shrink-0"
                     onClick={() =>
                       logo.website && window.open(logo.website, "_blank")
                     }
                   >
-                    <div className="w-24 h-16 flex items-center justify-center p-3 bg-white rounded-lg border border-gray-50 hover:border-gray-200 transition-all duration-300">
+                    <div className="flex items-center justify-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-orange/30 hover:shadow-md transition-all duration-300 min-w-[120px] h-20">
                       <img
                         src={logo.logoUrl}
                         alt={`${logo.name} logo`}
-                        className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                        className="h-16 w-auto object-contain transition-all duration-300"
                       />
                     </div>
                   </div>
                 ))}
+              </div>
             </div>
           </div>
 
