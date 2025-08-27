@@ -132,7 +132,7 @@ const TrustedBy: React.FC<TrustedByProps> = ({
                       logo.website && window.open(logo.website, "_blank")
                     }
                   >
-                    <div className="flex items-center justify-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-orange/30 hover:shadow-md transition-all duration-300 min-w-[120px] h-20">
+                    <div className="flex items-center justify-center p-6 bg-white rounded-xl border border-gray-700/10 hover:border-brand-orange/30 hover:shadow-md transition-all duration-300 min-w-[120px] h-20">
                       <img
                         src={logo.logoUrl}
                         alt={`${logo.name} logo`}
@@ -150,7 +150,7 @@ const TrustedBy: React.FC<TrustedByProps> = ({
                       logo.website && window.open(logo.website, "_blank")
                     }
                   >
-                    <div className="flex items-center justify-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-orange/30 hover:shadow-md transition-all duration-300 min-w-[120px] h-20">
+                    <div className="flex items-center justify-center p-6 bg-white rounded-xl border border-gray-700/10 hover:border-brand-orange/30 hover:shadow-md transition-all duration-300 min-w-[120px] h-20">
                       <img
                         src={logo.logoUrl}
                         alt={`${logo.name} logo`}
