@@ -214,42 +214,48 @@ export const TrustedByWithData: React.FC = () => {
     {
       id: "1",
       name: "Commonwealth Bank",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F67d726da1b8c4ec9b8d8d5a48935f798?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F67d726da1b8c4ec9b8d8d5a48935f798?format=webp&width=800",
       tier: "premium",
       website: "https://commbank.com.au",
     },
     {
       id: "2",
       name: "BHP Group",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F9b05899d26ce4f53bb3548f9110bbbb9?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F9b05899d26ce4f53bb3548f9110bbbb9?format=webp&width=800",
       tier: "premium",
       website: "https://bhp.com",
     },
     {
       id: "3",
       name: "ANZ Bank",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2Fa36ce14ad68149f0afe9832e87132246?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2Fa36ce14ad68149f0afe9832e87132246?format=webp&width=800",
       tier: "premium",
       website: "https://anz.com.au",
     },
     {
       id: "4",
       name: "Woolworths",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F5eeba8dd689541a698f53e291b2af84c?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F5eeba8dd689541a698f53e291b2af84c?format=webp&width=800",
       tier: "premium",
       website: "https://woolworths.com.au",
     },
     {
       id: "5",
       name: "NAB",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F4979ade39eb44f07966fa5738fce8a27?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F4979ade39eb44f07966fa5738fce8a27?format=webp&width=800",
       tier: "premium",
       website: "https://nab.com.au",
     },
     {
       id: "6",
       name: "Macquarie Group",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F0faa9857a573452ea60c6db4c1103bda?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F0faa9857a573452ea60c6db4c1103bda?format=webp&width=800",
       tier: "premium",
       website: "https://macquarie.com",
     },
@@ -258,43 +264,50 @@ export const TrustedByWithData: React.FC = () => {
     {
       id: "7",
       name: "Xero",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F95b751d5477245d18188ba6eb0d7c415?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F95b751d5477245d18188ba6eb0d7c415?format=webp&width=800",
       tier: "standard",
     },
     {
       id: "8",
       name: "Afterpay",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F811d9f22e67d4d2abcafd7a1cf91b451?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F811d9f22e67d4d2abcafd7a1cf91b451?format=webp&width=800",
       tier: "standard",
     },
     {
       id: "9",
       name: "Cochlear",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F2bb1a06f8d944df79f7f942652464140?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F2bb1a06f8d944df79f7f942652464140?format=webp&width=800",
       tier: "standard",
     },
     {
       id: "10",
       name: "Sonic Healthcare",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F2933817e6d92492ab14ea5ab06712e69?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F2933817e6d92492ab14ea5ab06712e69?format=webp&width=800",
       tier: "standard",
     },
     {
       id: "11",
       name: "TPG Telecom",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2Fdad869db42744e28a855ba8a5621d500?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2Fdad869db42744e28a855ba8a5621d500?format=webp&width=800",
       tier: "standard",
     },
     {
       id: "12",
       name: "Medibank",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F1f243f4d6c864839b8b7d8c857c380a8?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F1f243f4d6c864839b8b7d8c857c380a8?format=webp&width=800",
       tier: "standard",
     },
     {
       id: "13",
       name: "Aurizon",
-      logoUrl: "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F799b66af367c4125aaa1a93cd05fa9cc?format=webp&width=800",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F799b66af367c4125aaa1a93cd05fa9cc?format=webp&width=800",
       tier: "standard",
     },
   ];
