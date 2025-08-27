@@ -37,7 +37,7 @@ export const generateMetaTags = (config: SEOConfig) => {
     { property: "og:url", content: config.canonical || baseUrl },
     {
       property: "og:image",
-      content: config.image || `${baseUrl}/og-image.jpg`,
+      content: config.image || `${baseUrl}/images/og-image.jpg`,
     },
     { property: "og:image:width", content: "1200" },
     { property: "og:image:height", content: "630" },
@@ -49,7 +49,7 @@ export const generateMetaTags = (config: SEOConfig) => {
     { name: "twitter:description", content: config.description },
     {
       name: "twitter:image",
-      content: config.image || `${baseUrl}/twitter-image.jpg`,
+      content: config.image || `${baseUrl}/images/twitter-image.jpg`,
     },
 
     // Article-specific tags
