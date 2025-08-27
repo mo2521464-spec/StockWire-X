@@ -43,9 +43,9 @@ export interface BrandTokens {
 export const stockWireXTokens: BrandTokens = {
   name: "StockWire X",
   domain: "stockwirex.com",
-  logoPrimary: "/logos/stockwirex-primary.svg",
-  logoVertical: "/logos/stockwirex-vertical.svg",
-  logomark: "/logos/stockwirex-mark.svg",
+  logoPrimary: "/images/stockwirex-primary.svg",
+  logoVertical: "/images/stockwirex-vertical.svg",
+  logomark: "/images/stockwirex-mark.svg",
   palette: {
     primary: "#051230",
     secondary: "#0B1630",
@@ -61,11 +61,11 @@ export const stockWireXTokens: BrandTokens = {
   ctaColor: "#E77E22",
   textColor: "#051230",
   faviconSet: {
-    favicon32: "/favicons/stockwirex-32.png",
-    favicon48: "/favicons/stockwirex-48.png",
-    favicon64: "/favicons/stockwirex-64.png",
-    favicon128: "/favicons/stockwirex-128.png",
-    favicon256: "/favicons/stockwirex-256.png",
+    favicon32: "/images/stockwirex-32.png",
+    favicon48: "/images/stockwirex-48.png",
+    favicon64: "/images/stockwirex-64.png",
+    favicon128: "/images/stockwirex-128.png",
+    favicon256: "/images/stockwirex-256.png",
   },
   typography: {
     headingFont: "Inter",
@@ -74,10 +74,10 @@ export const stockWireXTokens: BrandTokens = {
     accentFont: "Poppins",
   },
   socialCovers: {
-    linkedin: "/social/stockwirex-linkedin-1128x191.jpg",
-    youtube: "/social/stockwirex-youtube-2560x1440.jpg",
-    x: "/social/stockwirex-x-1500x500.jpg",
-    facebook: "/social/stockwirex-facebook-820x312.jpg",
+    linkedin: "/images/stockwirex-linkedin-1128x191.jpg",
+    youtube: "/images/stockwirex-youtube-2560x1440.jpg",
+    x: "/images/stockwirex-x-1500x500.jpg",
+    facebook: "/images/stockwirex-facebook-820x312.jpg",
   },
   essence:
     "Empower investors with fast, clear, actionable market intelligence. Insights at speed.",
@@ -86,9 +86,9 @@ export const stockWireXTokens: BrandTokens = {
 export const discoveryAlertTokens: BrandTokens = {
   name: "Discovery Alert",
   domain: "discoveryalert.com",
-  logoPrimary: "/logos/discoveryalert-primary.svg",
-  logoVertical: "/logos/discoveryalert-vertical.svg",
-  logomark: "/logos/discoveryalert-mark.svg",
+  logoPrimary: "/images/discoveryalert-primary.svg",
+  logoVertical: "/images/discoveryalert-vertical.svg",
+  logomark: "/images/discoveryalert-mark.svg",
   palette: {
     primary: "#1E3A8A",
     secondary: "#3B82F6",
@@ -104,11 +104,11 @@ export const discoveryAlertTokens: BrandTokens = {
   ctaColor: "#F59E0B",
   textColor: "#1E3A8A",
   faviconSet: {
-    favicon32: "/favicons/discoveryalert-32.png",
-    favicon48: "/favicons/discoveryalert-48.png",
-    favicon64: "/favicons/discoveryalert-64.png",
-    favicon128: "/favicons/discoveryalert-128.png",
-    favicon256: "/favicons/discoveryalert-256.png",
+    favicon32: "/images/discoveryalert-32.png",
+    favicon48: "/images/discoveryalert-48.png",
+    favicon64: "/images/discoveryalert-64.png",
+    favicon128: "/images/discoveryalert-128.png",
+    favicon256: "/images/discoveryalert-256.png",
   },
   typography: {
     headingFont: "Inter",
@@ -117,10 +117,10 @@ export const discoveryAlertTokens: BrandTokens = {
     accentFont: "Poppins",
   },
   socialCovers: {
-    linkedin: "/social/discoveryalert-linkedin-1128x191.jpg",
-    youtube: "/social/discoveryalert-youtube-2560x1440.jpg",
-    x: "/social/discoveryalert-x-1500x500.jpg",
-    facebook: "/social/discoveryalert-facebook-820x312.jpg",
+    linkedin: "/images/discoveryalert-linkedin-1128x191.jpg",
+    youtube: "/images/discoveryalert-youtube-2560x1440.jpg",
+    x: "/images/discoveryalert-x-1500x500.jpg",
+    facebook: "/images/discoveryalert-facebook-820x312.jpg",
   },
   essence:
     "Discover tomorrow's opportunities today with intelligent market alerts.",
