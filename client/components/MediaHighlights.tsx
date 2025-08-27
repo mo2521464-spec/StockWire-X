@@ -247,25 +247,25 @@ const MediaHighlights: React.FC<MediaHighlightsProps> = ({
 
           {/* Quick Stats */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+            <div className="text-center p-8 bg-white rounded-xl shadow-sm border border-gray-700/10">
               <div className="font-heading text-2xl text-brand-orange mb-2">
                 25+
               </div>
               <div className="text-sm text-gray-600">Weekly Videos</div>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+            <div className="text-center p-8 bg-white rounded-xl shadow-sm border border-gray-700/10">
               <div className="font-heading text-2xl text-brand-orange mb-2">
                 500K+
               </div>
               <div className="text-sm text-gray-600">Monthly Views</div>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+            <div className="text-center p-8 bg-white rounded-xl shadow-sm border border-gray-700/10">
               <div className="font-heading text-2xl text-brand-orange mb-2">
                 50+
               </div>
               <div className="text-sm text-gray-600">Expert Analysts</div>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+            <div className="text-center p-8 bg-white rounded-xl shadow-sm border border-gray-700/10">
               <div className="font-heading text-2xl text-brand-orange mb-2">
                 24/7
               </div>
