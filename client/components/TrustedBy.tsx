@@ -120,54 +120,46 @@ const TrustedBy: React.FC<TrustedByProps> = ({
               Trusted by leading ASX companies and institutions
             </h3>
 
-            {/* Premium Tier Logos */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center mb-8">
-              {logos
-                .filter((logo) => logo.tier === "premium")
-                .slice(0, 10)
-                .map((logo, index) => (
+            {/* Infinite Scrolling Marquee */}
+            <div className="relative overflow-hidden">
+              <div className="flex animate-marquee whitespace-nowrap">
+                {/* First set of logos */}
+                {logos.map((logo, index) => (
                   <div
-                    key={logo.id}
-                    className="group cursor-pointer transition-all duration-300 hover:scale-105"
+                    key={`first-${logo.id}`}
+                    className="group cursor-pointer transition-all duration-300 hover:scale-105 mx-8 flex-shrink-0"
                     onClick={() =>
                       logo.website && window.open(logo.website, "_blank")
                     }
                   >
-                    <div className="w-32 h-20 flex items-center justify-center p-4 bg-white rounded-lg border border-gray-100 hover:border-brand-orange/30 hover:shadow-md transition-all duration-300">
+                    <div className="flex items-center justify-center p-6 bg-white rounded-xl border border-gray-700/10 hover:border-brand-orange/30 hover:shadow-md transition-all duration-300 min-w-[120px] h-20">
                       <img
                         src={logo.logoUrl}
                         alt={`${logo.name} logo`}
-                        className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                        className="h-16 w-auto object-contain transition-all duration-300"
                       />
                     </div>
                   </div>
                 ))}
-            </div>
-
-            <Separator className="max-w-2xl mx-auto" />
-
-            {/* Standard Tier Logos - Smaller */}
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 items-center justify-items-center opacity-75">
-              {logos
-                .filter((logo) => logo.tier === "standard")
-                .slice(0, 12)
-                .map((logo, index) => (
+                {/* Duplicate set for seamless loop */}
+                {logos.map((logo, index) => (
                   <div
-                    key={logo.id}
-                    className="group cursor-pointer transition-all duration-300 hover:opacity-100"
+                    key={`second-${logo.id}`}
+                    className="group cursor-pointer transition-all duration-300 hover:scale-105 mx-8 flex-shrink-0"
                     onClick={() =>
                       logo.website && window.open(logo.website, "_blank")
                     }
                   >
-                    <div className="w-24 h-16 flex items-center justify-center p-3 bg-white rounded-lg border border-gray-50 hover:border-gray-200 transition-all duration-300">
+                    <div className="flex items-center justify-center p-6 bg-white rounded-xl border border-gray-700/10 hover:border-brand-orange/30 hover:shadow-md transition-all duration-300 min-w-[120px] h-20">
                       <img
                         src={logo.logoUrl}
                         alt={`${logo.name} logo`}
-                        className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                        className="h-16 w-auto object-contain transition-all duration-300"
                       />
                     </div>
                   </div>
                 ))}
+              </div>
             </div>
           </div>
 
@@ -222,145 +214,100 @@ export const TrustedByWithData: React.FC = () => {
     {
       id: "1",
       name: "Commonwealth Bank",
-      logoUrl: "/api/placeholder/120/60",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F67d726da1b8c4ec9b8d8d5a48935f798?format=webp&width=800",
       tier: "premium",
       website: "https://commbank.com.au",
     },
     {
       id: "2",
       name: "BHP Group",
-      logoUrl: "/api/placeholder/120/60",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F9b05899d26ce4f53bb3548f9110bbbb9?format=webp&width=800",
       tier: "premium",
       website: "https://bhp.com",
     },
     {
       id: "3",
-      name: "CSL Limited",
-      logoUrl: "/api/placeholder/120/60",
-      tier: "premium",
-      website: "https://csl.com",
-    },
-    {
-      id: "4",
-      name: "Westpac",
-      logoUrl: "/api/placeholder/120/60",
-      tier: "premium",
-      website: "https://westpac.com.au",
-    },
-    {
-      id: "5",
-      name: "Rio Tinto",
-      logoUrl: "/api/placeholder/120/60",
-      tier: "premium",
-      website: "https://riotinto.com",
-    },
-    {
-      id: "6",
       name: "ANZ Bank",
-      logoUrl: "/api/placeholder/120/60",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2Fa36ce14ad68149f0afe9832e87132246?format=webp&width=800",
       tier: "premium",
       website: "https://anz.com.au",
     },
     {
-      id: "7",
-      name: "Telstra",
-      logoUrl: "/api/placeholder/120/60",
-      tier: "premium",
-      website: "https://telstra.com.au",
-    },
-    {
-      id: "8",
+      id: "4",
       name: "Woolworths",
-      logoUrl: "/api/placeholder/120/60",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F5eeba8dd689541a698f53e291b2af84c?format=webp&width=800",
       tier: "premium",
       website: "https://woolworths.com.au",
     },
     {
-      id: "9",
+      id: "5",
       name: "NAB",
-      logoUrl: "/api/placeholder/120/60",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F4979ade39eb44f07966fa5738fce8a27?format=webp&width=800",
       tier: "premium",
       website: "https://nab.com.au",
     },
     {
-      id: "10",
+      id: "6",
       name: "Macquarie Group",
-      logoUrl: "/api/placeholder/120/60",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F0faa9857a573452ea60c6db4c1103bda?format=webp&width=800",
       tier: "premium",
       website: "https://macquarie.com",
     },
 
     // Standard tier (smaller)
     {
+      id: "7",
+      name: "Xero",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F95b751d5477245d18188ba6eb0d7c415?format=webp&width=800",
+      tier: "standard",
+    },
+    {
+      id: "8",
+      name: "Afterpay",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F811d9f22e67d4d2abcafd7a1cf91b451?format=webp&width=800",
+      tier: "standard",
+    },
+    {
+      id: "9",
+      name: "Cochlear",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F2bb1a06f8d944df79f7f942652464140?format=webp&width=800",
+      tier: "standard",
+    },
+    {
+      id: "10",
+      name: "Sonic Healthcare",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F2933817e6d92492ab14ea5ab06712e69?format=webp&width=800",
+      tier: "standard",
+    },
+    {
       id: "11",
-      name: "REA Group",
-      logoUrl: "/api/placeholder/80/40",
+      name: "TPG Telecom",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2Fdad869db42744e28a855ba8a5621d500?format=webp&width=800",
       tier: "standard",
     },
     {
       id: "12",
-      name: "Xero",
-      logoUrl: "/api/placeholder/80/40",
+      name: "Medibank",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F1f243f4d6c864839b8b7d8c857c380a8?format=webp&width=800",
       tier: "standard",
     },
     {
       id: "13",
-      name: "Afterpay",
-      logoUrl: "/api/placeholder/80/40",
-      tier: "standard",
-    },
-    {
-      id: "14",
-      name: "Seek",
-      logoUrl: "/api/placeholder/80/40",
-      tier: "standard",
-    },
-    {
-      id: "15",
-      name: "JB Hi-Fi",
-      logoUrl: "/api/placeholder/80/40",
-      tier: "standard",
-    },
-    {
-      id: "16",
-      name: "Harvey Norman",
-      logoUrl: "/api/placeholder/80/40",
-      tier: "standard",
-    },
-    {
-      id: "17",
-      name: "Flight Centre",
-      logoUrl: "/api/placeholder/80/40",
-      tier: "standard",
-    },
-    {
-      id: "18",
-      name: "Cochlear",
-      logoUrl: "/api/placeholder/80/40",
-      tier: "standard",
-    },
-    {
-      id: "19",
-      name: "Sonic Healthcare",
-      logoUrl: "/api/placeholder/80/40",
-      tier: "standard",
-    },
-    {
-      id: "20",
-      name: "TPG Telecom",
-      logoUrl: "/api/placeholder/80/40",
-      tier: "standard",
-    },
-    {
-      id: "21",
-      name: "Medibank",
-      logoUrl: "/api/placeholder/80/40",
-      tier: "standard",
-    },
-    {
-      id: "22",
       name: "Aurizon",
-      logoUrl: "/api/placeholder/80/40",
+      logoUrl:
+        "https://cdn.builder.io/api/v1/image/assets%2F5d066c74ac8e430bb115fd2558261e00%2F799b66af367c4125aaa1a93cd05fa9cc?format=webp&width=800",
       tier: "standard",
     },
   ];

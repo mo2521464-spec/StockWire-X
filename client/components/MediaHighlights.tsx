@@ -129,7 +129,7 @@ const MediaHighlights: React.FC<MediaHighlightsProps> = ({
                     key={item.id}
                     className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
                   >
-                    <Card className="group cursor-pointer overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <Card className="group cursor-pointer overflow-hidden border border-gray-700/10 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-xl">
                       <div className="relative">
                         {/* Thumbnail */}
                         <div className="aspect-video overflow-hidden">
@@ -247,25 +247,25 @@ const MediaHighlights: React.FC<MediaHighlightsProps> = ({
 
           {/* Quick Stats */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+            <div className="text-center p-8 bg-white rounded-xl shadow-sm border border-gray-700/10">
               <div className="font-heading text-2xl text-brand-orange mb-2">
                 25+
               </div>
               <div className="text-sm text-gray-600">Weekly Videos</div>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+            <div className="text-center p-8 bg-white rounded-xl shadow-sm border border-gray-700/10">
               <div className="font-heading text-2xl text-brand-orange mb-2">
                 500K+
               </div>
               <div className="text-sm text-gray-600">Monthly Views</div>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+            <div className="text-center p-8 bg-white rounded-xl shadow-sm border border-gray-700/10">
               <div className="font-heading text-2xl text-brand-orange mb-2">
                 50+
               </div>
               <div className="text-sm text-gray-600">Expert Analysts</div>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+            <div className="text-center p-8 bg-white rounded-xl shadow-sm border border-gray-700/10">
               <div className="font-heading text-2xl text-brand-orange mb-2">
                 24/7
               </div>
@@ -301,7 +301,7 @@ export const MediaHighlightsWithData: React.FC = () => {
       viewCount: 15420,
       platform: "YouTube",
       embedUrl: "https://youtube.com/watch?v=example1",
-      thumbnailUrl: "/api/placeholder/480/270",
+      thumbnailUrl: "/images/video1.jpg",
       publishedAt: "2024-01-15T17:30:00Z",
       author: "Marcus Chen",
       tags: ["Daily Wrap", "ASX 200", "Market Analysis"],
@@ -315,7 +315,7 @@ export const MediaHighlightsWithData: React.FC = () => {
       viewCount: 8932,
       platform: "TikTok",
       embedUrl: "https://tiktok.com/@stockwirex/video/example2",
-      thumbnailUrl: "/api/placeholder/480/270",
+      thumbnailUrl: "/images/video2.jpg",
       publishedAt: "2024-01-15T12:00:00Z",
       author: "Sarah Williams",
       tags: ["Weekly Summary", "ASX Announcements"],
@@ -329,7 +329,7 @@ export const MediaHighlightsWithData: React.FC = () => {
       viewCount: 22100,
       platform: "LinkedIn",
       embedUrl: "https://linkedin.com/posts/stockwirex-example3",
-      thumbnailUrl: "/api/placeholder/480/270",
+      thumbnailUrl: "/images/video3.jpg",
       publishedAt: "2024-01-14T10:30:00Z",
       author: "David Thompson",
       tags: ["Mining", "Commodities", "Sector Analysis"],
@@ -342,7 +342,7 @@ export const MediaHighlightsWithData: React.FC = () => {
       duration: "6:30",
       viewCount: 12750,
       platform: "Internal",
-      thumbnailUrl: "/api/placeholder/480/270",
+      thumbnailUrl: "/images/video4.jpg",
       publishedAt: "2024-01-14T14:15:00Z",
       author: "Dr. Lisa Park",
       tags: ["Biotech", "Investment", "Healthcare"],

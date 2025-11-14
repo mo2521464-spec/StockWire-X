@@ -54,7 +54,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
   if (variant === "feature") {
     return (
       <Card
-        className="group cursor-pointer hover:shadow-2xl transition-brand overflow-hidden border-0 bg-white shadow-brand-lg hover-lift rounded-2xl"
+        className="group cursor-pointer hover:shadow-2xl transition-brand overflow-hidden border border-gray-700/10 bg-white shadow-brand-lg hover-lift rounded-xl"
         onClick={onClick}
       >
         <div className="relative">
@@ -139,10 +139,10 @@ const NewsCard: React.FC<NewsCardProps> = ({
   // Compact variant
   return (
     <Card
-      className="group cursor-pointer hover:shadow-xl transition-brand border-l-4 border-l-brand-orange/30 hover:border-l-brand-orange bg-white shadow-brand hover-lift rounded-xl"
+      className="group cursor-pointer hover:shadow-xl transition-brand border border-gray-700/10 border-l-4 border-l-brand-orange/30 hover:border-l-brand-orange bg-white shadow-brand hover-lift rounded-xl"
       onClick={onClick}
     >
-      <CardContent className="p-6">
+      <CardContent className="p-8">
         <div className="flex items-start space-x-5">
           {coverImage && (
             <div className="flex-shrink-0 w-24 h-24 md:w-28 md:h-28 rounded-xl overflow-hidden">

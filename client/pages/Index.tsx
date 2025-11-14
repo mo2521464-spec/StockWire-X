@@ -157,7 +157,7 @@ export default function Index() {
               ].map((article, index) => (
                 <div
                   key={index}
-                  className="p-6 bg-white rounded-lg border border-gray-100 hover:shadow-lg transition-all duration-200 cursor-pointer"
+                  className="p-8 bg-white rounded-xl border border-gray-700/10 hover:shadow-lg transition-all duration-300 cursor-pointer"
                 >
                   <div className="flex items-start justify-between mb-3">
                     <span className="text-sm font-medium text-brand-orange">
